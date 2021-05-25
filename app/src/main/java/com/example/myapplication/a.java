@@ -19,7 +19,7 @@ public class a extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a);
-        next = (ImageButton)findViewById(R.id.next);
+        next = (ImageButton)findViewById(R.id.next); //test
         home = (ImageButton)findViewById(R.id.home);
         back = (ImageButton)findViewById(R.id.back);
         speaker = (ImageButton)findViewById(R.id.speaker);
