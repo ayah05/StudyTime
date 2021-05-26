@@ -8,6 +8,19 @@
         tools:context=".MainActivity2"
         android:background="#5A5959">
 
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="800dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
     <Button
             android:id="@+id/ok"
             android:layout_width="73dp"
@@ -22,16 +35,16 @@
             app:layout_constraintBottom_toBottomOf="@+id/popup"/>
 
     <ImageView
-            android:id="@+id/cat"
-            android:layout_width="171dp"
-            android:layout_height="198dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.77"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.843"
-            app:srcCompat="@mipmap/ic_launch_cat_foreground"/>
+        android:id="@+id/cat"
+        android:layout_width="171dp"
+        android:layout_height="198dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.904"
+        app:srcCompat="@mipmap/ic_launch_cat_foreground" />
 
     <ImageView
             android:id="@+id/sprechblase"

@@ -7,11 +7,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 public class MainActivity2 extends AppCompatActivity {
     private EditText name;
     private Button ok;
     public String nameZ;
+    private ImageView bg;
     SharedPreferences sharedPreferences;
     private static final String SHARED_PREF_NAME = "mypref";
     private static final String KEY_NAME = "name";
@@ -23,6 +25,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         name = findViewById(R.id.name);
         ok = findViewById(R.id.ok);
+        bg = findViewById(R.id.background);
 
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME,MODE_PRIVATE);
 

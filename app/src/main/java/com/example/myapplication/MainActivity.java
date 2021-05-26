@@ -8,11 +8,13 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView nextBl;
+    private ImageView bg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         nextBl = (ImageView) findViewById(R.id.nextBl);
+        bg = findViewById(R.id.background);
 
         nextBl.setOnClickListener(new View.OnClickListener() {
             @Override
