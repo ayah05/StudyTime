@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+public class mathsTask11 extends AppCompatActivity {
 
-public class mathsTask7 extends AppCompatActivity {
     private ImageButton next;
     private ImageButton home;
     private ImageButton back;
@@ -20,10 +20,11 @@ public class mathsTask7 extends AppCompatActivity {
     private Button answer3Btn;
     private Button answer4Btn;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maths_task7);
+        setContentView(R.layout.activity_maths_task11);
 
         next = (ImageButton) findViewById(R.id.next);
         home = (ImageButton) findViewById(R.id.home);
@@ -35,6 +36,7 @@ public class mathsTask7 extends AppCompatActivity {
         answer3Btn = (Button) findViewById(R.id.answer3Btn);
         answer4Btn = (Button) findViewById(R.id.answer4Btn);
 
+
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,14 +47,14 @@ public class mathsTask7 extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openTask6();
+                openTask10();
             }
         });
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openTask8();
+                openTask12();
             }
         });
     }
@@ -62,13 +64,13 @@ public class mathsTask7 extends AppCompatActivity {
         startActivity(intentHome);
     }
 
-    public void openTask6(){
-        Intent intentTask6 = new Intent(this,mathsTask6.class);
-        startActivity(intentTask6);
+    public void openTask10(){
+        Intent intentTask10 = new Intent(this,mathsTask10.class);
+        startActivity(intentTask10);
     }
 
-    public void openTask8(){
-        Intent intentTask8 = new Intent(this, mathsTask8.class);
-        startActivity(intentTask8);
+    public void openTask12(){
+        Intent intentTask12 = new Intent(this, mathsTask12.class);
+        startActivity(intentTask12);
     }
 }

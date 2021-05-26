@@ -9,6 +9,11 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <activity android:name=".mathsTask12"></activity>
+        <activity android:name=".mathsTask11" />
+        <activity android:name=".mathsTask10" />
+        <activity android:name=".mathsTask9" />
+        <activity android:name=".mathsTask8" />
         <activity android:name=".IntroductoryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,9 +57,7 @@
         <activity android:name=".a" />
         <activity android:name=".MainActivity3" />
         <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

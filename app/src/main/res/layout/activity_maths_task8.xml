@@ -4,55 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mathsTask7">
+    tools:context=".mathsTask8">
 
     <ImageView
-        android:id="@+id/imageView46"
+        android:id="@+id/imageView50"
         android:layout_width="80dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37"
-        app:srcCompat="@drawable/teddy1" />
+        app:layout_constraintVertical_bias="0.227"
+        app:srcCompat="@drawable/spaceshipp" />
 
     <ImageView
-        android:id="@+id/imageView45"
+        android:id="@+id/imageView48"
         android:layout_width="80dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.296"
-        app:srcCompat="@drawable/teddy1" />
+        app:layout_constraintVertical_bias="0.405"
+        app:srcCompat="@drawable/spaceshipp" />
 
     <ImageView
-        android:id="@+id/imageView44"
+        android:id="@+id/imageView49"
         android:layout_width="80dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199"
-        app:srcCompat="@drawable/teddy1" />
-
-    <ImageView
-        android:id="@+id/imageView42"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.328"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37"
-        app:srcCompat="@drawable/teddy" />
+        app:layout_constraintVertical_bias="0.405"
+        app:srcCompat="@drawable/spaceshipp" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -111,7 +99,7 @@
         android:id="@+id/textViewTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="7 - 4 = ?"
+        android:text="5 - 4 = ?"
         android:textColor="@color/black"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -125,7 +113,7 @@
         android:id="@+id/answer1Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="4"
+        android:text="1"
         android:textSize="24sp"
         app:backgroundTint="#5C6BC0"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -139,7 +127,7 @@
         android:id="@+id/answer2Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3"
+        android:text="4"
         android:textSize="24sp"
         app:backgroundTint="#5C6BC0"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -167,7 +155,7 @@
         android:id="@+id/answer4Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="5"
+        android:text="0"
         android:textSize="24sp"
         app:backgroundTint="#5C6BC0"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -177,41 +165,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.804" />
 
-
     <ImageView
-        android:id="@+id/imageView40"
+        android:id="@+id/imageView39"
         android:layout_width="80dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintHorizontal_bias="0.357"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199"
-        app:srcCompat="@drawable/teddy" />
+        app:layout_constraintVertical_bias="0.227"
+        app:srcCompat="@drawable/spaceship" />
 
     <ImageView
-        android:id="@+id/imageView41"
+        android:id="@+id/imageView47"
         android:layout_width="80dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintHorizontal_bias="0.607"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199"
-        app:srcCompat="@drawable/teddy" />
-
-    <ImageView
-        android:id="@+id/imageView43"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37"
-        app:srcCompat="@drawable/teddy1" />
+        app:layout_constraintVertical_bias="0.227"
+        app:srcCompat="@drawable/spaceshipp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
