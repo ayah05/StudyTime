@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 public class mathsTask2 extends AppCompatActivity {
 
@@ -19,6 +22,8 @@ public class mathsTask2 extends AppCompatActivity {
     private Button answer2Btn;
     private Button answer3Btn;
     private Button answer4Btn;
+    private ImageButton speaker;
+    private TextToSpeech tts;
 
 
     @Override
@@ -35,6 +40,7 @@ public class mathsTask2 extends AppCompatActivity {
         answer2Btn = (Button) findViewById(R.id.answer2Btn);
         answer3Btn = (Button) findViewById(R.id.answer3Btn);
         answer4Btn = (Button) findViewById(R.id.answer4Btn);
+        speaker = (ImageButton) findViewById(R.id.speaker);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +62,23 @@ public class mathsTask2 extends AppCompatActivity {
                 home();
             }
         });
+
+        tts =  new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status == TextToSpeech.SUCCESS){
+                    int language =  tts.setLanguage(Locale.ENGLISH);
+                    speaker.setEnabled(true);
+                }
+            }
+        });
+
+        speaker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                speak();
+            }
+        });
     }
 
     public void openTask3(){
@@ -71,5 +94,18 @@ public class mathsTask2 extends AppCompatActivity {
     public void home(){
         Intent intentHome = new Intent(getApplicationContext(), MainActivity3.class);
         startActivity(intentHome);
+    }
+
+    private void speak(){
+        tts.speak("What is three plus four?" +  "  " + "4" + "or 8" + "or 7" + "or 9",TextToSpeech.QUEUE_FLUSH,null);
+    }
+
+    @Override
+    protected void onDestroy() {
+        if(tts != null){
+            tts.stop();
+            tts.shutdown();
+        }
+        super.onDestroy();
     }
 }

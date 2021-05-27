@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 public class mathsTask6 extends AppCompatActivity {
     private ImageButton next;
@@ -17,6 +20,8 @@ public class mathsTask6 extends AppCompatActivity {
     private Button answer1Btn;
     private Button answer2Btn;
     private Button answer3Btn;
+    private ImageButton speaker;
+    private TextToSpeech tts;
 
 
     @Override
@@ -27,6 +32,7 @@ public class mathsTask6 extends AppCompatActivity {
         next = (ImageButton) findViewById(R.id.next);
         home = (ImageButton) findViewById(R.id.home);
         back = (ImageButton) findViewById(R.id.back);
+        speaker = (ImageButton) findViewById(R.id.speaker);
 
         textViewTask = (TextView) findViewById(R.id.textViewTask);
         answer1Btn = (Button) findViewById(R.id.answer1Btn);
@@ -54,6 +60,23 @@ public class mathsTask6 extends AppCompatActivity {
             }
         });
 
+        tts =  new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status == TextToSpeech.SUCCESS){
+                    int language =  tts.setLanguage(Locale.ENGLISH);
+                    speaker.setEnabled(true);
+                }
+            }
+        });
+
+        speaker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                speak();
+            }
+        });
+
     }
 
     public void home(){
@@ -69,6 +92,19 @@ public class mathsTask6 extends AppCompatActivity {
     public void openTask7(){
         Intent intentTask7 = new Intent(this, mathsTask7.class);
         startActivity(intentTask7);
+    }
+
+    private void speak(){
+        tts.speak("Which task fits the picture?" +  "  " + "3 + 5 + 1 = 9" + " or " + "3 + 2 + 3 = 8" + " or " + "4 + 3 + 2 = 9",TextToSpeech.QUEUE_FLUSH,null);
+    }
+
+    @Override
+    protected void onDestroy() {
+        if(tts != null){
+            tts.stop();
+            tts.shutdown();
+        }
+        super.onDestroy();
     }
 
 }

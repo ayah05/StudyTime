@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 public class mathsTask11 extends AppCompatActivity {
 
@@ -19,6 +22,8 @@ public class mathsTask11 extends AppCompatActivity {
     private Button answer2Btn;
     private Button answer3Btn;
     private Button answer4Btn;
+    private ImageButton speaker;
+    private TextToSpeech tts;
 
 
     @Override
@@ -29,6 +34,7 @@ public class mathsTask11 extends AppCompatActivity {
         next = (ImageButton) findViewById(R.id.next);
         home = (ImageButton) findViewById(R.id.home);
         back = (ImageButton) findViewById(R.id.back);
+        speaker = (ImageButton) findViewById(R.id.speaker);
 
         textViewTask = (TextView) findViewById(R.id.textViewTask);
         answer1Btn = (Button) findViewById(R.id.answer1Btn);
@@ -57,6 +63,23 @@ public class mathsTask11 extends AppCompatActivity {
                 openTask12();
             }
         });
+
+        tts =  new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status == TextToSpeech.SUCCESS){
+                    int language =  tts.setLanguage(Locale.ENGLISH);
+                    speaker.setEnabled(true);
+                }
+            }
+        });
+
+        speaker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                speak();
+            }
+        });
     }
 
     public void home(){
@@ -72,5 +95,18 @@ public class mathsTask11 extends AppCompatActivity {
     public void openTask12(){
         Intent intentTask12 = new Intent(this, mathsTask12.class);
         startActivity(intentTask12);
+    }
+
+    private void speak(){
+        tts.speak("What is 5 - 1 ?" +  "  " + "4" + "or 1" + "or 0" + "or 3",TextToSpeech.QUEUE_FLUSH,null);
+    }
+
+    @Override
+    protected void onDestroy() {
+        if(tts != null){
+            tts.stop();
+            tts.shutdown();
+        }
+        super.onDestroy();
     }
 }
