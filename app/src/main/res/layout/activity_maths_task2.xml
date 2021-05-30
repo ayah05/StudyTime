@@ -150,7 +150,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.256"
-        app:srcCompat="@drawable/bird" />
+        app:srcCompat="@drawable/bird1" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -162,7 +162,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.256"
-        app:srcCompat="@drawable/bird" />
+        app:srcCompat="@drawable/bird1" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -174,7 +174,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.458"
-        app:srcCompat="@drawable/bird" />
+        app:srcCompat="@drawable/bird1" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -186,7 +186,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.256"
-        app:srcCompat="@drawable/turtle" />
+        app:srcCompat="@drawable/turtle1" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -198,7 +198,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.256"
-        app:srcCompat="@drawable/turtle" />
+        app:srcCompat="@drawable/turtle1" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -210,7 +210,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.427"
-        app:srcCompat="@drawable/turtle" />
+        app:srcCompat="@drawable/turtle1" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -222,7 +222,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.427"
-        app:srcCompat="@drawable/turtle" />
+        app:srcCompat="@drawable/turtle1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

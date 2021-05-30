@@ -34,7 +34,7 @@
         app:srcCompat="@mipmap/ic_launch_cat_foreground" />
 
     <ImageView
-        android:id="@+id/sprechblase"
+        android:id="@+id/sprechblase1"
         android:layout_width="300dp"
         android:layout_height="175dp"
         app:layout_constraintBottom_toBottomOf="parent"
