@@ -90,10 +90,8 @@
         <activity android:name=".horse" />
         <activity android:name=".horset" />
         <activity android:name=".horsew" />
-
-
-        <activity android:name=".dog_t" />
-        <activity android:name=".dog_w" />
+        <activity android:name=".dogt" />
+        <activity android:name=".dogw" />
         <activity android:name=".chicken" />
         <activity android:name=".chickent" />
         <activity android:name=".chickenw" />
@@ -127,7 +125,7 @@
         <activity android:name=".hedgehog" />
         <activity android:name=".hedgehogw" />
         <activity android:name=".hedgehogt" />
-        <activity android:name=".ladybug" />
+        <activity android:name=".ladybugs" />
         <activity android:name=".ladybugt" />
         <activity android:name=".ladybugw" />
         <activity android:name=".lamb" />
@@ -151,8 +149,6 @@
         <activity android:name=".turtle" />
         <activity android:name=".turtlew" />
         <activity android:name=".turtlet" />
-
-
     </application>
 
 </manifest>

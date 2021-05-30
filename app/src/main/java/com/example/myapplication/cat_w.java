@@ -73,7 +73,7 @@ public class cat_w extends AppCompatActivity {
     }
 
     public void opencat(){
-        Intent catstart = new Intent(this,cat.class);
+        Intent catstart = new Intent(this, cat.class);
         startActivity(catstart);
     }
 
