@@ -16,9 +16,9 @@ public class cat extends AppCompatActivity {
     private ImageButton home;
     private ImageButton back;
     private TextView animal_1;
-    private Button CAT;
-    private Button CAT_W;
-    private Button cat_w2;
+    private Button catt;
+    private Button catw;
+    private Button catw2;
     private ImageButton speaker;
     private TextToSpeech tts;
 
@@ -34,9 +34,9 @@ public class cat extends AppCompatActivity {
         speaker = (ImageButton) findViewById(R.id.speaker);
 
         animal_1 = (TextView) findViewById(R.id.animal_1);
-        CAT = (Button) findViewById(R.id.deerw2);
-        CAT_W = (Button) findViewById(R.id.dogt);
-        cat_w2 = (Button) findViewById(R.id.elephantt);
+        catt = (Button) findViewById(R.id.catt);
+        catw = (Button) findViewById(R.id.catw);
+        catw2 = (Button) findViewById(R.id.catw2);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,24 +59,24 @@ public class cat extends AppCompatActivity {
                 home();
             }
         });
-        CAT.setOnClickListener(new View.OnClickListener() {
+        catt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                catt();
+                opencatt();
 
             }
         });
-        CAT_W.setOnClickListener(new View.OnClickListener() {
+        catw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                catw();
+                opencatw();
 
             }
         });
-        cat_w2.setOnClickListener(new View.OnClickListener() {
+        catw2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                catw();
+                opencatw();
 
             }
         });
@@ -112,11 +112,11 @@ public class cat extends AppCompatActivity {
     private void speak(){
         tts.speak("What animal do you see?" +  "Do you see a dog?" + "Do you see a cat?" + "Or do you see a bird" ,TextToSpeech.QUEUE_FLUSH,null);
     }
-    public void catw(){
+    public void opencatw(){
         Intent cwstart = new Intent(this,cat_w.class);
         startActivity(cwstart);
     }
-    public void catt(){
+    public void opencatt(){
         Intent ctstart = new Intent(this,cat_t.class);
         startActivity(ctstart);
     }

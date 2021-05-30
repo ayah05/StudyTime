@@ -109,7 +109,7 @@
         app:srcCompat="@drawable/cat" />
 
     <Button
-        android:id="@+id/deerw2"
+        android:id="@+id/catt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="cat"
@@ -121,7 +121,7 @@
         app:layout_constraintVertical_bias="0.723" />
 
     <Button
-        android:id="@+id/dogt"
+        android:id="@+id/catw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dog"
@@ -133,7 +133,7 @@
         app:layout_constraintVertical_bias="0.824" />
 
     <Button
-        android:id="@+id/elephantt"
+        android:id="@+id/catw2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="bird"
