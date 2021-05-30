@@ -1,4 +1,4 @@
 package com.example.myapplication;
-
-public class horsew {
+import androidx.appcompat.app.AppCompatActivity;
+public class horsew extends AppCompatActivity {
 }

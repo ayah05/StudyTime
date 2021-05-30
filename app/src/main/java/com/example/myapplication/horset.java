@@ -1,4 +1,4 @@
 package com.example.myapplication;
-
-public class horset {
+import androidx.appcompat.app.AppCompatActivity;
+public class horset extends AppCompatActivity {
 }
