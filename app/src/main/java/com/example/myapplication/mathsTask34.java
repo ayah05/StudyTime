@@ -11,16 +11,16 @@ import android.widget.ImageButton;
 
 import java.util.Locale;
 
-public class mathsTask25 extends AppCompatActivity {
+public class mathsTask34 extends AppCompatActivity {
 
-    Button nextTaskBtn;
+    private Button nextTaskBtn;
     private ImageButton speaker1;
     private TextToSpeech tts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maths_task25);
+        setContentView(R.layout.activity_maths_task34);
 
         nextTaskBtn = (Button) findViewById(R.id.nextTaskBtn1);
         speaker1 = (ImageButton) findViewById(R.id.speaker1);
@@ -28,7 +28,7 @@ public class mathsTask25 extends AppCompatActivity {
         nextTaskBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openTask7();
+                openTask12();
             }
         });
 
@@ -50,12 +50,12 @@ public class mathsTask25 extends AppCompatActivity {
         });
     }
 
-    public void openTask7(){
-        Intent intentTask7 = new Intent(this,mathsTask7.class);
-        startActivity(intentTask7);
+    public void openTask12(){
+        Intent intentTask12 = new Intent(this,mathsTask12.class);
+        startActivity(intentTask12);
     }
 
     private void speak(){
-        tts.speak("Wrong Answer! " + "  " + "You can do it better! Try again" ,TextToSpeech.QUEUE_FLUSH,null);
+        tts.speak("Awesome!" + "  " + "That's correct!" ,TextToSpeech.QUEUE_FLUSH,null);
     }
 }

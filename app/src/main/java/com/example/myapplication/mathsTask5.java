@@ -80,21 +80,21 @@ public class mathsTask5 extends AppCompatActivity {
         answer2Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openTask22();
+                openTask21();
             }
         });
 
         answer1Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openTask22();
+                openTask21();
             }
         });
 
         answer3Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openTask21();
+                openTask22();
             }
         });
     }

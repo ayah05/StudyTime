@@ -29,7 +29,7 @@ public class mathsTask26 extends AppCompatActivity {
         nextTaskBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openTask7();
+                openTask8();
             }
         });
 
@@ -51,9 +51,9 @@ public class mathsTask26 extends AppCompatActivity {
         });
     }
 
-    public void openTask7(){
-        Intent intentTask7 = new Intent(this,mathsTask7.class);
-        startActivity(intentTask7);
+    public void openTask8(){
+        Intent intentTask8 = new Intent(this,mathsTask8.class);
+        startActivity(intentTask8);
     }
 
     private void speak(){

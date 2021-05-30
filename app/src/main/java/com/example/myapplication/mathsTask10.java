@@ -79,6 +79,34 @@ public class mathsTask10 extends AppCompatActivity {
                 speak();
             }
         });
+
+        answer2Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTask32();
+            }
+        });
+
+        answer1Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTask31();
+            }
+        });
+
+        answer3Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTask31();
+            }
+        });
+
+        answer4Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTask31();
+            }
+        });
     }
 
     public void home(){
@@ -107,5 +135,15 @@ public class mathsTask10 extends AppCompatActivity {
             tts.shutdown();
         }
         super.onDestroy();
+    }
+
+    public void openTask31(){
+        Intent intentTask31 = new Intent(this,mathsTask31.class);
+        startActivity(intentTask31);
+    }
+
+    public void openTask32(){
+        Intent intentTask32 = new Intent(this, mathsTask32.class);
+        startActivity(intentTask32);
     }
 }
