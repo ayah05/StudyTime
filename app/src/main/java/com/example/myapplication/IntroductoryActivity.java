@@ -36,5 +36,7 @@ public class IntroductoryActivity extends AppCompatActivity
             }
         }, 4350);
 
+        //hallo daniela du bist die allerbeste, best regards your fips
+
     }
 }
