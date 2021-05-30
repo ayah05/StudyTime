@@ -2,7 +2,6 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.media.Image;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -12,9 +11,8 @@ import android.os.Bundle;
 
 public class MainActivity3 extends AppCompatActivity {
     private TextView abc_text;
-    private ImageButton abc;
+    private ImageButton abc, doris;
     private TextView textView_name;
-    private ImageButton doris;
     private TextView animaltext;
     SharedPreferences sharedPreferences;
     private static final String SHARED_PREF_NAME = "mypref";
@@ -28,7 +26,7 @@ public class MainActivity3 extends AppCompatActivity {
         abc = (ImageButton) findViewById(R.id.abc);
         textView_name = findViewById(R.id.textView_name);
         animaltext =(TextView) findViewById(R.id.animaltext);
-        doris =(ImageButton) findViewById(R.id.doris);
+        doris = findViewById(R.id.doris);
 
 
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME,MODE_PRIVATE);
@@ -46,10 +44,12 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
-        doris.setOnClickListener(new View.OnClickListener() {
+        doris.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
-                opencat();
+            public void onClick(View v)
+            {
+                startActivity(new Intent(MainActivity3.this, cat.class));
             }
         });
 
@@ -75,7 +75,9 @@ public class MainActivity3 extends AppCompatActivity {
         startActivity(intentTask1);
     }
 
-    public void opencat(){
-        Intent intentcat = new Intent(getApplicationContext(), cat.class);
+    public void opencat()
+    {
+        Intent intentcat = new Intent(this, cat.class);
         startActivity(intentcat);
-}}
+    }
+}
