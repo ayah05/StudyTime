@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.Image;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -13,6 +14,8 @@ public class MainActivity3 extends AppCompatActivity {
     private TextView abc_text;
     private ImageButton abc;
     private TextView textView_name;
+    private ImageButton doris;
+    private TextView animaltext;
     SharedPreferences sharedPreferences;
     private static final String SHARED_PREF_NAME = "mypref";
     private static final String KEY_NAME = "name";
@@ -24,6 +27,9 @@ public class MainActivity3 extends AppCompatActivity {
         abc_text = (TextView) findViewById(R.id.abc_text);
         abc = (ImageButton) findViewById(R.id.abc);
         textView_name = findViewById(R.id.textView_name);
+        animaltext =(TextView) findViewById(R.id.animaltext);
+        doris =(ImageButton) findViewById(R.id.doris);
+
 
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME,MODE_PRIVATE);
 
@@ -40,6 +46,14 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
+        doris.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opencat();
+            }
+        });
+
+
         Button buttonDaniela = (Button) findViewById(R.id.buttonDaniela);
 
         buttonDaniela.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +62,7 @@ public class MainActivity3 extends AppCompatActivity {
                 opentask1();
             }
         });
+
     }
 
     public void openActivity2(){
@@ -59,4 +74,8 @@ public class MainActivity3 extends AppCompatActivity {
         Intent intentTask1 = new Intent(getApplicationContext(), mathsTask1.class);
         startActivity(intentTask1);
     }
-}
+
+    public void opencat(){
+        Intent intentcat = new Intent(getApplicationContext(), cat.class);
+        startActivity(intentcat);
+}}
