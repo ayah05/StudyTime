@@ -26,7 +26,7 @@ public class horse extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cat);
+        setContentView(R.layout.l_horse);
 
         next = (ImageButton) findViewById(R.id.next);
         home = (ImageButton) findViewById(R.id.home);
@@ -103,7 +103,7 @@ public class horse extends AppCompatActivity {
         startActivity(dogstart);
     }
     public void openbird(){
-        Intent birdstart = new Intent(this,bird.class);
+        Intent birdstart = new Intent(this, bird.class);
         startActivity(birdstart);
     }
 
@@ -116,12 +116,12 @@ public class horse extends AppCompatActivity {
         tts.speak("What animal do you see?" +  "Do you see a horse?" + "Do you see a giraffe?" + "Or do you see a cheetah" ,TextToSpeech.QUEUE_FLUSH,null);
     }
     public void openhorsew(){
-        Intent hwstart = new Intent(this,horsew.class);
-        startActivity(hwstart);
+        Intent horsestartw = new Intent(this, horsew.class);
+        startActivity(horsestartw);
     }
     public void openhorset(){
-        Intent htstart = new Intent(this,horset.class);
-        startActivity(htstart);
+        Intent horsestartt = new Intent(this, horset2.class);
+        startActivity(horsestartt);
     }
 
     @Override

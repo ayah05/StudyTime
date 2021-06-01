@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class dogt extends AppCompatActivity {
+public class dogT2 extends AppCompatActivity {
     private ImageButton next;
     private ImageButton home;
     private ImageButton back;
@@ -23,7 +23,7 @@ public class dogt extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cat_true);
+        setContentView(R.layout.l_dog_true);
 
         next = (ImageButton) findViewById(R.id.next);
         home = (ImageButton) findViewById(R.id.home);

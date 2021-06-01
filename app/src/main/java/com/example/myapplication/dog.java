@@ -118,11 +118,11 @@ public class dog extends AppCompatActivity {
         tts.speak("What animal do you see?" +  "Do you see a tiger?" + "Do you see a dog?" + "Or do you see a zebra" ,TextToSpeech.QUEUE_FLUSH,null);
     }
     public void opendogw(){
-        Intent dwstart = new Intent(this,dogw.class);
+        Intent dwstart = new Intent(this, com.example.myapplication.dogw.class);
         startActivity(dwstart);
     }
     public void opendogt(){
-        Intent dtstart = new Intent(this,dogt.class);
+        Intent dtstart = new Intent(this, dogT2.class);
         startActivity(dtstart);
     }
 

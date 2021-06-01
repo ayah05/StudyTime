@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class deerw extends AppCompatActivity {
+public class cowt2 extends AppCompatActivity {
     private ImageButton next;
     private ImageButton home;
     private ImageButton back;
@@ -23,7 +23,7 @@ public class deerw extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cat_wrong);
+        setContentView(R.layout.l_cow_true);
 
         next = (ImageButton) findViewById(R.id.next);
         home = (ImageButton) findViewById(R.id.home);
@@ -35,7 +35,7 @@ public class deerw extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openfox();
+                openbutterfly();
 
             }
         });
@@ -50,7 +50,7 @@ public class deerw extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openhamster();
+                opengoat();
             }
         });
 
@@ -85,7 +85,7 @@ public class deerw extends AppCompatActivity {
         startActivity(intentHome);
     }
     public void openbird(){
-        Intent birdstart = new Intent(this,bird.class);
+        Intent birdstart = new Intent(this, bird.class);
         startActivity(birdstart);
     }
     public void openrabbit(){
@@ -143,6 +143,26 @@ public class deerw extends AppCompatActivity {
     public void opentiger(){
         Intent tigerstart = new Intent(this,tiger.class);
         startActivity(tigerstart);
+    }
+    public void opengoat(){
+        Intent goatstart = new Intent(this,goat.class);
+        startActivity(goatstart);
+    }
+    public void opencow(){
+        Intent cowstart = new Intent(this,cow.class);
+        startActivity(cowstart);
+    }
+    public void openbutterfly(){
+        Intent butterflystart = new Intent(this,butterfly.class);
+        startActivity(butterflystart);
+    }
+    public void openlamb(){
+        Intent lambstart = new Intent(this,lamb.class);
+        startActivity(lambstart);
+    }
+    public void openturtle(){
+        Intent turtlestart = new Intent(this,turtle.class);
+        startActivity(turtlestart);
     }
     private void speak(){
         tts.speak("Oh no! This answer is wrong. Please try again!" ,TextToSpeech.QUEUE_FLUSH,null);

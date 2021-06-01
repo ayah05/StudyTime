@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class cat_t extends AppCompatActivity {
+public class horset2 extends AppCompatActivity {
     private ImageButton next;
     private ImageButton home;
     private ImageButton back;
@@ -23,7 +23,7 @@ public class cat_t extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cat_true);
+        setContentView(R.layout.l_horse_true);
 
         next = (ImageButton) findViewById(R.id.next);
         home = (ImageButton) findViewById(R.id.home);
@@ -35,7 +35,7 @@ public class cat_t extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                opendog();
+                openbird();
 
             }
         });
@@ -50,7 +50,7 @@ public class cat_t extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                home();
+                opendog();
             }
         });
 
@@ -81,9 +81,68 @@ public class cat_t extends AppCompatActivity {
         Intent intentHome = new Intent(getApplicationContext(), MainActivity3.class);
         startActivity(intentHome);
     }
-
+    public void openbird(){
+        Intent birdstart = new Intent(this, bird.class);
+        startActivity(birdstart);
+    }
+    public void openrabbit(){
+        Intent rabbitstart = new Intent(this,rabbit.class);
+        startActivity(rabbitstart);
+    }
+    public void openfish(){
+        Intent fishstart = new Intent(this,fish.class);
+        startActivity(fishstart);
+    }
+    public void openelephant(){
+        Intent elephantstart = new Intent(this,elephant.class);
+        startActivity(elephantstart);
+    }
+    public void hedgehog(){
+        Intent hedgehogstart = new Intent(this,hedgehog.class);
+        startActivity(hedgehogstart);
+    }
+    public void chicken(){
+        Intent chickenstart = new Intent(this,chicken.class);
+        startActivity(chickenstart);
+    }
+    public void hamster(){
+        Intent hamsterstart = new Intent(this,hamster.class);
+        startActivity(hamsterstart);
+    }
+    public void deer(){
+        Intent deerstart = new Intent(this,deer.class);
+        startActivity(deerstart);
+    }
+    public void fox(){
+        Intent foxstart = new Intent(this,fox.class);
+        startActivity(foxstart);
+    }
+    public void giraffe(){
+        Intent giraffestart = new Intent(this,giraffe.class);
+        startActivity(giraffestart);
+    }
+    public void ladybug(){
+        Intent ladybugstart = new Intent(this,ladybugs.class);
+        startActivity(ladybugstart);
+    }
+    public void monkey(){
+        Intent monkeystart = new Intent(this,monkey.class);
+        startActivity(monkeystart);
+    }
+    public void lion(){
+        Intent lionstart = new Intent(this,lion.class);
+        startActivity(lionstart);
+    }
+    public void mouse(){
+        Intent mousestart = new Intent(this,mouse.class);
+        startActivity(mousestart);
+    }
+    public void tiger(){
+        Intent tigerstart = new Intent(this,tiger.class);
+        startActivity(tigerstart);
+    }
     private void speak(){
-        tts.speak("Congratulation! This answer ist correct!" ,TextToSpeech.QUEUE_FLUSH,null);
+        tts.speak("Oh no! This answer is wrong. Please try again!" ,TextToSpeech.QUEUE_FLUSH,null);
     }
 
     @Override
