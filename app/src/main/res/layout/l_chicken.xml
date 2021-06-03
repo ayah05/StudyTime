@@ -99,7 +99,7 @@
         app:srcCompat="@mipmap/ic_launch_speaker" />
 
     <Button
-        android:id="@+id/deerw2"
+        android:id="@+id/chickenw2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="frog"
@@ -111,7 +111,7 @@
         app:layout_constraintVertical_bias="0.723" />
 
     <Button
-        android:id="@+id/deert"
+        android:id="@+id/chickenw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="bird"
@@ -123,7 +123,7 @@
         app:layout_constraintVertical_bias="0.824" />
 
     <Button
-        android:id="@+id/elephantt"
+        android:id="@+id/chickent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="chicken"

@@ -10,32 +10,32 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class cat_w extends AppCompatActivity {
+public class chickent2 extends AppCompatActivity {
     private ImageButton next;
     private ImageButton home;
     private ImageButton back;
     private TextView animal_1;
     private ImageButton speaker;
     private TextToSpeech tts;
-    private TextView wrong1;
+    private TextView true1;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cat_wrong);
+        setContentView(R.layout.l_chicken_true);
 
         next = (ImageButton) findViewById(R.id.next);
         home = (ImageButton) findViewById(R.id.home);
         back = (ImageButton) findViewById(R.id.back);
         speaker = (ImageButton) findViewById(R.id.speaker);
         animal_1 = (TextView) findViewById(R.id.animal_1);
-        wrong1 = (TextView) findViewById(R.id.true1);
+        true1 = (TextView) findViewById(R.id.true1);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                opencat();
+                openhamster();
 
             }
         });
@@ -50,7 +50,7 @@ public class cat_w extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                home();
+                openhedgehog();
             }
         });
 
@@ -76,12 +76,74 @@ public class cat_w extends AppCompatActivity {
         Intent catstart = new Intent(this,cat.class);
         startActivity(catstart);
     }
-
+    public void openhorse(){
+        Intent horsestart = new Intent(this,horse.class);
+        startActivity(horsestart);
+    }
     public void home(){
         Intent intentHome = new Intent(getApplicationContext(), MainActivity3.class);
         startActivity(intentHome);
     }
-
+    public void openbird(){
+        Intent birdstart = new Intent(this, bird.class);
+        startActivity(birdstart);
+    }
+    public void openrabbit(){
+        Intent rabbitstart = new Intent(this,rabbit.class);
+        startActivity(rabbitstart);
+    }
+    public void openfish(){
+        Intent fishstart = new Intent(this,fish.class);
+        startActivity(fishstart);
+    }
+    public void openelephant(){
+        Intent elephantstart = new Intent(this,elephant.class);
+        startActivity(elephantstart);
+    }
+    public void openhedgehog(){
+        Intent hedgehogstart = new Intent(this,hedgehog.class);
+        startActivity(hedgehogstart);
+    }
+    public void openchicken(){
+        Intent chickenstart = new Intent(this,chicken.class);
+        startActivity(chickenstart);
+    }
+    public void openhamster(){
+        Intent hamsterstart = new Intent(this,hamster.class);
+        startActivity(hamsterstart);
+    }
+    public void opendeer(){
+        Intent deerstart = new Intent(this,deer.class);
+        startActivity(deerstart);
+    }
+    public void openfox(){
+        Intent foxstart = new Intent(this,fox.class);
+        startActivity(foxstart);
+    }
+    public void opengiraffe(){
+        Intent giraffestart = new Intent(this,giraffe.class);
+        startActivity(giraffestart);
+    }
+    public void openladybug(){
+        Intent ladybugstart = new Intent(this,ladybugs.class);
+        startActivity(ladybugstart);
+    }
+    public void openmonkey(){
+        Intent monkeystart = new Intent(this,monkey.class);
+        startActivity(monkeystart);
+    }
+    public void openlion(){
+        Intent lionstart = new Intent(this,lion.class);
+        startActivity(lionstart);
+    }
+    public void openmouse(){
+        Intent mousestart = new Intent(this,mouse.class);
+        startActivity(mousestart);
+    }
+    public void opentiger(){
+        Intent tigerstart = new Intent(this,tiger.class);
+        startActivity(tigerstart);
+    }
     private void speak(){
         tts.speak("Oh no! This answer is wrong. Please try again!" ,TextToSpeech.QUEUE_FLUSH,null);
     }
