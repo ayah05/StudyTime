@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +18,7 @@ public class quiz_b extends AppCompatActivity {
     private ImageButton next;
     private ImageButton home;
     private ImageButton back;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,7 @@ public class quiz_b extends AppCompatActivity {
         next = (ImageButton) findViewById(R.id.next);
         home = (ImageButton) findViewById(R.id.home);
         back = (ImageButton) findViewById(R.id.back);
+
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override

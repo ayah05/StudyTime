@@ -12,8 +12,7 @@ import android.widget.ImageView;
 public class MainActivity2 extends AppCompatActivity {
     private EditText name;
     private Button ok;
-    public String nameZ;
-    private ImageView bg;
+
     SharedPreferences sharedPreferences;
     private static final String SHARED_PREF_NAME = "mypref";
     private static final String KEY_NAME = "name";
@@ -25,23 +24,15 @@ public class MainActivity2 extends AppCompatActivity {
 
         name = findViewById(R.id.name);
         ok = findViewById(R.id.ok);
-        bg = findViewById(R.id.background);
 
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME,MODE_PRIVATE);
-
-        String nameCheck = sharedPreferences.getString(KEY_NAME, null);
-        if(nameCheck != null){
-            Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
-            startActivity(intent);
-        }
-
 
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString(KEY_NAME,name.getText().toString());
-                editor.apply();
+                editor.commit();
                 Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
                 startActivity(intent);
             }

@@ -18,10 +18,6 @@ public class quiz_a extends AppCompatActivity {
     private ImageButton next;
     private ImageButton home;
     private ImageButton back;
-    /*SharedPreferences sharedPreferences;
-    SharedPreferences.Editor preferencesEditor;
-    private int counter;
-    final String KEY ="rightAnswers";*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +29,7 @@ public class quiz_a extends AppCompatActivity {
         next = (ImageButton) findViewById(R.id.next);
         home = (ImageButton) findViewById(R.id.home);
         back = (ImageButton) findViewById(R.id.back);
-        /*this.sharedPreferences = this.getSharedPreferences("score", MODE_PRIVATE);
-        preferencesEditor = sharedPreferences.edit();*/
+
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +60,7 @@ public class quiz_a extends AppCompatActivity {
                 if ( Text.equals("apple"))
                 {
                     openDialog2();
+
                 }else{
                     openDialog();
                     quiz_input.setText("");

@@ -14,14 +14,13 @@ public class MainActivity3 extends AppCompatActivity {
     private ImageButton abc, doris;
     private TextView textView_name;
     private TextView animaltext;
-    SharedPreferences sharedPreferences;
-    private static final String SHARED_PREF_NAME = "mypref";
-    private static final String KEY_NAME = "name";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+
         abc_text = (TextView) findViewById(R.id.abc_text);
         abc = (ImageButton) findViewById(R.id.abc);
         textView_name = findViewById(R.id.textView_name);
@@ -29,13 +28,9 @@ public class MainActivity3 extends AppCompatActivity {
         doris = findViewById(R.id.doris);
 
 
-        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME,MODE_PRIVATE);
-
-        String nameCheck = sharedPreferences.getString(KEY_NAME, null);
-        if(nameCheck != null){
-           textView_name.setText(nameCheck);
-        }
-
+        SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("mypref",MODE_PRIVATE);
+        String name = sharedPreferences.getString("name", "");
+        textView_name.setText(name);
 
         abc.setOnClickListener(new View.OnClickListener() {
             @Override
