@@ -8,8 +8,8 @@
 
     <ImageButton
         android:id="@+id/speaker1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="92dp"
+        android:layout_height="84dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,53 +21,54 @@
 
     <ImageView
         android:id="@+id/cat2"
-        android:layout_width="244dp"
-        android:layout_height="274dp"
+        android:layout_width="234dp"
+        android:layout_height="319dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.715"
+        app:layout_constraintVertical_bias="0.901"
         app:srcCompat="@mipmap/ic_launch_cat_foreground" />
 
     <ImageView
         android:id="@+id/imageView74"
-        android:layout_width="354dp"
-        android:layout_height="525dp"
+        android:layout_width="497dp"
+        android:layout_height="340dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintHorizontal_bias="0.359"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.096"
         app:srcCompat="@drawable/bubble" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="192dp"
-        android:layout_height="119dp"
+        android:layout_width="389dp"
+        android:layout_height="232dp"
         android:text="Wrong answer! You can do it better! Try again!"
-        android:textColor="#4CAF50"
-        android:textSize="24sp"
+        android:textColor="#F30B0B"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintHorizontal_bias="0.417"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.296" />
+        app:layout_constraintVertical_bias="0.183" />
 
     <Button
         android:id="@+id/nextTaskBtn1"
-        android:layout_width="145dp"
-        android:layout_height="53dp"
+        android:layout_width="189dp"
+        android:layout_height="58dp"
         android:text="try again"
-        app:backgroundTint="#4CAF50"
+        android:textSize="24sp"
+        app:backgroundTint="#F30B0B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintHorizontal_bias="0.893"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958" />
+        app:layout_constraintVertical_bias="0.93" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
