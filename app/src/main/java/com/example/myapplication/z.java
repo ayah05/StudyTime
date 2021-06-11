@@ -75,7 +75,7 @@ public class z extends AppCompatActivity {
         super.onDestroy();
     }
     public void openActivityQuiz(){
-        Intent intentQuiz = new Intent(getApplicationContext(), quiz.class);
+        Intent intentQuiz = new Intent(getApplicationContext(), quiz_a.class);
         startActivity(intentQuiz);
     }
     public void getBack(){

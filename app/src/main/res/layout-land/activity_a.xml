@@ -9,20 +9,19 @@
 
     <ImageView
         android:id="@+id/frame"
-        android:layout_width="256dp"
-        android:layout_height="182dp"
+        android:layout_width="499dp"
+        android:layout_height="319dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.248"
+        app:layout_constraintVertical_bias="0.193"
         app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="864dp"
-        android:layout_height="47dp"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
         android:background="#D3BF8E"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -74,39 +73,39 @@
 
     <TextView
         android:id="@+id/ThisIsAnA"
-        android:layout_width="157dp"
-        android:layout_height="43dp"
+        android:layout_width="203dp"
+        android:layout_height="56dp"
         android:text="This is an A."
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.622" />
+        app:layout_constraintVertical_bias="0.688" />
 
     <ImageView
         android:id="@+id/grossesA"
-        android:layout_width="110dp"
-        android:layout_height="134dp"
+        android:layout_width="172dp"
+        android:layout_height="197dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231"
+        app:layout_constraintVertical_bias="0.252"
         app:srcCompat="@mipmap/ic_launcher_grosses_a_foreground" />
 
     <ImageView
         android:id="@+id/kleinesA"
-        android:layout_width="85dp"
-        android:layout_height="76dp"
+        android:layout_width="124dp"
+        android:layout_height="117dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.337"
+        app:layout_constraintVertical_bias="0.347"
         app:srcCompat="@mipmap/ic_launcher_kleines_a_foreground" />
 
     <TextView
@@ -114,21 +113,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A like..."
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.721" />
+        app:layout_constraintVertical_bias="0.759" />
 
     <ImageView
         android:id="@+id/apple"
-        android:layout_width="80dp"
-        android:layout_height="68dp"
+        android:layout_width="119dp"
+        android:layout_height="103dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.731"
@@ -136,20 +135,20 @@
 
     <ImageView
         android:id="@+id/art"
-        android:layout_width="80dp"
-        android:layout_height="74dp"
+        android:layout_width="117dp"
+        android:layout_height="105dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.742"
+        app:layout_constraintHorizontal_bias="0.795"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.729"
+        app:layout_constraintVertical_bias="0.745"
         app:srcCompat="@mipmap/ic_launcher_art_foreground" />
 
     <ImageView
         android:id="@+id/ant"
-        android:layout_width="79dp"
-        android:layout_height="79dp"
+        android:layout_width="119dp"
+        android:layout_height="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
@@ -160,14 +159,14 @@
 
     <ImageView
         android:id="@+id/airplane"
-        android:layout_width="81dp"
-        android:layout_height="77dp"
+        android:layout_width="117dp"
+        android:layout_height="119dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.742"
+        app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97"
+        app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@mipmap/ic_launcher_airplane_foreground" />
 
     <TextView
@@ -175,64 +174,64 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="apple"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.713" />
+        app:layout_constraintVertical_bias="0.696" />
 
     <TextView
         android:id="@+id/text_art"
         android:layout_width="43dp"
         android:layout_height="37dp"
         android:text="art"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.719" />
+        app:layout_constraintVertical_bias="0.693" />
 
     <TextView
         android:id="@+id/text_ant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ant"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.943" />
+        app:layout_constraintVertical_bias="0.921" />
 
     <TextView
         android:id="@+id/text_airplane"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="airplane"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.909" />
+        app:layout_constraintVertical_bias="0.921" />
 
     <ImageButton
         android:id="@+id/speaker"
-        android:layout_width="54dp"
-        android:layout_height="45dp"
+        android:layout_width="58dp"
+        android:layout_height="50dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.389"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672"
+        app:layout_constraintVertical_bias="0.728"
         app:srcCompat="@mipmap/ic_launch_speaker" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
