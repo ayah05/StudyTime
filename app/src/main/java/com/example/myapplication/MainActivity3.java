@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -49,9 +50,9 @@ public class MainActivity3 extends AppCompatActivity {
         });
 
 
-        Button buttonDaniela = (Button) findViewById(R.id.buttonDaniela);
+        ImageView danielaButton = findViewById(R.id.danielaButton);
 
-        buttonDaniela.setOnClickListener(new View.OnClickListener() {
+        danielaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 opentask1();

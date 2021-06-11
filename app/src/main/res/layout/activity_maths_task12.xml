@@ -13,70 +13,70 @@
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintHorizontal_bias="0.646"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.529"
+        app:layout_constraintVertical_bias="0.591"
         app:srcCompat="@mipmap/ic_launch_speaker" />
 
     <ImageView
         android:id="@+id/imageView72"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintHorizontal_bias="0.298"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427"
+        app:layout_constraintVertical_bias="0.398"
         app:srcCompat="@drawable/zebraa" />
 
     <ImageView
         android:id="@+id/imageView73"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.552"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427"
+        app:layout_constraintVertical_bias="0.398"
         app:srcCompat="@drawable/zebraa" />
 
     <ImageView
         android:id="@+id/imageView69"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintHorizontal_bias="0.298"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256"
+        app:layout_constraintVertical_bias="0.212"
         app:srcCompat="@drawable/zebra" />
 
     <ImageView
         android:id="@+id/imageView70"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.668"
+        app:layout_constraintHorizontal_bias="0.678"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427"
+        app:layout_constraintVertical_bias="0.398"
         app:srcCompat="@drawable/zebra" />
 
     <ImageView
         android:id="@+id/imageView68"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.552"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256"
+        app:layout_constraintVertical_bias="0.212"
         app:srcCompat="@drawable/zebra" />
 
     <androidx.appcompat.widget.Toolbar
@@ -138,20 +138,20 @@
         android:layout_height="wrap_content"
         android:text="8 - 3 = ?"
         android:textColor="@color/black"
-        android:textSize="36sp"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.573" />
+        app:layout_constraintVertical_bias="0.584" />
 
     <Button
         android:id="@+id/answer1Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="6"
-        android:textSize="24sp"
+        android:textSize="34sp"
         app:backgroundTint="#5C6BC0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -165,7 +165,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="4"
-        android:textSize="24sp"
+        android:textSize="34sp"
         app:backgroundTint="#5C6BC0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -179,7 +179,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3"
-        android:textSize="24sp"
+        android:textSize="34sp"
         app:backgroundTint="#5C6BC0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -193,7 +193,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5"
-        android:textSize="24sp"
+        android:textSize="34sp"
         app:backgroundTint="#5C6BC0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -204,38 +204,38 @@
 
     <ImageView
         android:id="@+id/imageView66"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.668"
+        app:layout_constraintHorizontal_bias="0.678"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256"
+        app:layout_constraintVertical_bias="0.212"
         app:srcCompat="@drawable/zebra" />
 
     <ImageView
         android:id="@+id/imageView67"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256"
+        app:layout_constraintVertical_bias="0.212"
         app:srcCompat="@drawable/zebra" />
 
     <ImageView
         android:id="@+id/imageView71"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427"
+        app:layout_constraintVertical_bias="0.398"
         app:srcCompat="@drawable/zebraa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
