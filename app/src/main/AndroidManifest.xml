@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".quiz_end"></activity>
+        <activity android:name=".l_end"></activity>
+        <activity android:name=".quiz_end" />
         <activity android:name=".quiz_z" />
         <activity android:name=".quiz_y" />
         <activity android:name=".quiz_x" />

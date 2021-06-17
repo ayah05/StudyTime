@@ -74,14 +74,14 @@ public class turtle extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openturtle();
+                openend();
 
             }
         });
         turtlet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openturtlet();
+                openend();
 
             }
         });
@@ -390,7 +390,10 @@ public class turtle extends AppCompatActivity {
         Intent turtlewstart = new Intent(this,turtlew.class);
         startActivity(turtlewstart);
     }
-
+    public void openend(){
+        Intent endstart = new Intent(this,l_end.class);
+        startActivity(endstart);
+    }
     @Override
     protected void onDestroy() {
         if(tts != null){
