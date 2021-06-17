@@ -100,14 +100,13 @@
 
     <ImageView
         android:id="@+id/butterfly"
-        android:layout_width="713dp"
-        android:layout_height="361dp"
+        android:layout_width="714dp"
+        android:layout_height="310dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.313"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.301"
+        app:layout_constraintVertical_bias="0.269"
         app:srcCompat="@drawable/butterfly" />
 
     <ImageView

@@ -72,18 +72,7 @@
         app:layout_constraintVertical_bias="0.019"
         app:srcCompat="@mipmap/ic_launcher_back2_foreground" />
 
-    <TextView
-        android:id="@+id/animal_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="What animal is this?"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.382"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46" />
+
 
     <ImageButton
         android:id="@+id/speaker"
@@ -100,14 +89,13 @@
 
     <ImageView
         android:id="@+id/butterfly"
-        android:layout_width="742dp"
-        android:layout_height="343dp"
+        android:layout_width="714dp"
+        android:layout_height="310dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252"
+        app:layout_constraintVertical_bias="0.269"
         app:srcCompat="@drawable/butterfly" />
 
     <ImageView

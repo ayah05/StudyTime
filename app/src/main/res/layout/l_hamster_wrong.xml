@@ -87,14 +87,13 @@
 
     <ImageView
         android:id="@+id/hamster"
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
+        android:layout_width="637dp"
+        android:layout_height="357dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.374"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.279"
+        app:layout_constraintVertical_bias="0.356"
         app:srcCompat="@drawable/hamster" />
 
     <ImageView

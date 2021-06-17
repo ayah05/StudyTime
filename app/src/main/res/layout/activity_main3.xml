@@ -89,8 +89,8 @@
 
     <TextView
         android:id="@+id/textView_name"
-        android:layout_width="104dp"
-        android:layout_height="29dp"
+        android:layout_width="102dp"
+        android:layout_height="27dp"
         android:text="TextView"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -99,7 +99,7 @@
         app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/background"
-        app:layout_constraintVertical_bias="0.669" />
+        app:layout_constraintVertical_bias="0.658" />
 
     <TextView
         android:id="@+id/wannaPlay"
