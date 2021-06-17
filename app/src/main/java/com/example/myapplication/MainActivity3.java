@@ -12,7 +12,7 @@ import android.os.Bundle;
 
 public class MainActivity3 extends AppCompatActivity {
     private TextView abc_text;
-    private ImageButton abc, doris;
+    private ImageButton abc, doris, clock;
     private TextView textView_name;
     private TextView animaltext;
 
@@ -27,6 +27,7 @@ public class MainActivity3 extends AppCompatActivity {
         textView_name = findViewById(R.id.textView_name);
         animaltext =(TextView) findViewById(R.id.animaltext);
         doris = findViewById(R.id.doris);
+        clock = (ImageButton) findViewById(R.id.clock);
 
 
         SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("mypref",MODE_PRIVATE);
@@ -46,6 +47,13 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View v)
             {
                 startActivity(new Intent(MainActivity3.this, cat.class));
+            }
+        });
+
+        clock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity3.this, clockMenu.class));
             }
         });
 
