@@ -11,13 +11,13 @@
         android:layout_width="wrap_content"
         android:layout_height="800dp"
         android:scaleType="centerCrop"
+        android:src="@drawable/background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.507"
-        app:srcCompat="@drawable/background" />
+        app:layout_constraintVertical_bias="0.225" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -87,14 +87,13 @@
 
     <ImageView
         android:id="@+id/elephant1"
-        android:layout_width="1800dp"
-        android:layout_height="400dp"
+        android:layout_width="1803dp"
+        android:layout_height="364dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.638"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42"
+        app:layout_constraintVertical_bias="0.293"
         app:srcCompat="@drawable/chicken" />
 
     <ImageView
